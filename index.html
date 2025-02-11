@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembaca Kod QR</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Pembaca Kod QR</h1>
+      <p>Imbas kod QR menggunakan kamera peranti anda.</p>
+    </div>
+  </header>
+
+  <!-- QR Reader Section -->
+  <section id="qr-reader">
+    <div class="container">
+      <div id="reader-box">
+        <video id="video" autoplay></video>
+        <canvas id="canvas" style="display: none;"></canvas>
+        <p id="result"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Pembaca Kod QR. Hak Cipta Terpelihara.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
